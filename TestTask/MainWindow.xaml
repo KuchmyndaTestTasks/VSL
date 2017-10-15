@@ -1,0 +1,25 @@
+﻿<Window x:Class="TestTask.Ui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600"
+        Background="WhiteSmoke"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <TabControl SelectedItem="0">
+            <TabItem Header="Expression Checker">
+                <Frame Source="Frames/BracketChecker.xaml" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+            <TabItem Header="Nested Array Sum">
+                <Frame Source="Frames/NestedArray.xaml" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+            <TabItem Header="Chess Horse">
+                <Frame Source="Frames/Chess.xaml" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
